@@ -1,0 +1,4 @@
+<div *ngFor="let user of users" class="user-card">
+    <a [routerLink]="['/user', user.login]">{{ user.login }}</a> - ID: {{ user.id }}
+  </div>
+  

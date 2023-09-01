@@ -1,0 +1,21 @@
+
+.user-search-container {
+    margin-bottom: 20px;
+  }
+  
+  .user-card {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .user-card a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .user-card a:hover {
+    color: #007bff;
+  }
+  
