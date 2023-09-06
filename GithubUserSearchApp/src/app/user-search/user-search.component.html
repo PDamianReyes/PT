@@ -1,6 +1,11 @@
-<input type="text" [(ngModel)]="searchQuery" placeholder="Ingrese el nombre de usuario">
-<button (click)="searchUsers()">Buscar</button>
+  <div class="conteiner">
+  <h1>Add Usuer: </h1>
+  <a href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"></a>
+  
+<input class="body" type="text" [(ngModel)]="searchQuery" placeholder="ID user" style="background-color: white;">
+<button (click)="searchUsers()" class="fa-solid fa-magnifying-glass" style="background-color: white;" >Buscar</button>
 
 <div *ngFor="let user of users" class="user-card">
   <a [routerLink]="['/user', user.login]">{{ user.login }}</a> - ID: {{ user.id }}
+</div>
 </div>
